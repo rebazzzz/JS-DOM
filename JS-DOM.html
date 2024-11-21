@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Övningsuppgift för provet</title>
+    <style>
+        .kontroll-knapp {
+            width: 20%;
+            height: 80px;
+            color: white;
+            background-color: #4CAF50;
+            margin: 15px;
+            border-radius: 15px;
+            border: 2px solid #45a049;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .kontroll-knapp:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        #kontrollPanel {
+            display: flex;
+            background-color: #2c3e50;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 60%;
+            margin: 20px auto;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="innehall">
+    <p id="tidvisare"></p>
+    <img src="/lektioner/imgs/cakedup_minion.jfif" id="bild1" width="100px" height="100px" alt="Bild på en minion">
+    <img src="/lektioner/imgs/jonkler.jfif" id="bild2" width="100px" height="100px" alt="Bild på joker">
+    </div>
+    
+    <div id="kontrollPanel">
+            <button class="kontroll-knapp" id="bakgrund">Ändra BG</button>
+            <button class="kontroll-knapp" id="vaxlaBild">Byt bilden</button>
+            <button class="kontroll-knapp" id="centrera">Centrera allt</button>
+
+            <button class="kontroll-knapp" onclick="visaRubrik()">Visa text</button>
+            <button class="kontroll-knapp" id="doljBild">Gömm bilden</button>
+            <button class="kontroll-knapp" id="rensaAllt">Ta bort allt</button>
+
+            <button class="kontroll-knapp" id="visaTid">Visa tid</button>
+            <button class="kontroll-knapp" id="visaBild">Visa bilden</button>
+            <button class="kontroll-knapp" id="visaAllt">Visa allt igen</button>
+        </div>
+
+    <script src="/lektioner/js/JS-Dom.js"></script>
+</body>
+</html>
